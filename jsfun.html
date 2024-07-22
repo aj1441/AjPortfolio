@@ -35,40 +35,63 @@
           </button>
       </div>
     </header>
-    <section class="about-page-hero-section">
-        <section class="jspage-cards">
-            <div class="jscode-btn-container">
-              <button class="js-btn" id="js-colors-btn">I Want To Change The Colors</button>
-              <button class="js-btn js-time-btn">I Want To See What Time It Is In NYC</button>
-              <button class="js-btn js-madlib-btn">I Want To Make A Madlib</button>
+    <section class="jsfun-page-hero-section">
+      <section class="jspage-cards">
+        <div class="jscode-btn-container">
+          <button class="js-btn" id="js-colors-btn">I Want To Change The Colors</button>
+          <button class="js-btn" id="js-time-btn">I Want To See What Time It Is In NYC</button>
+          <button class="js-btn" id="js-madlib-btn">I Want To Make A Madlib</button>
+        </div>
+      </section>
+      <section id="colors-fun-wrapper" class="js-hide-form">
+        <form action="" class="color-fun-form" id="color-fun-form">
+          <h3>Fun With Colors</h3>
+          <div>
+            <label for="chooseColor">Fun With Colors</label>
+            <select id="chooseColor" name="choose-color" required>
+              <option value="choose-option" disbled selected hidden>Please choose an option</option>
+              <option value="#800080">Purple</option>
+              <option value="#ffff00">Yellow</option>
+              <option value="#008000">Green</option>
+              <option value="#ffa500">Orange</option>
+              <option value="#ff0000">Red</option>
+              <option value="#0000ff">Blue</option>
+            </select>
+          </div>
+          <div>
+            <label for="chooseType">Choose a type:</label>
+            <select id="chooseType" name="choose-type" required>
+              <option value="choose-option">--Please choose an option--</option>
+              <option value="background">Background</option>
+              <option value="text-color">Text Color</option>
+            </select>
+          </div>
+          <button class="button">Submit</button>
+        </form>
+      </section>
+      <section id="nyc-time" class="js-hide-form">
+        <div class="show-nyc-time" id="show-nyc-time"></div>
+      </section>
+      <section id="madlib-wrapper" class="js-hide-form">
+        <form action="" class="madlib-form">
+          <h3>Madlib</h3>
+          <div class="madlib-wrapper">
+            <div class="input-wrapper">
+              <label for="noun">Noun:</label>
+              <input type="text" id="noun" name="noun" required>
             </div>
-          </section>
-          <section id="colors-fun-wrapper" class="js-hide-form">
-            <form action="" class="color-fun-form">
-              <h3>Fun With Colors</h3>
-              <div>
-                <label for="chooseColor">Fun With Colors</label>
-                <select id="chooseColor" name="choose-color" required>
-                  <option value="choose-option" disbled selected hidden>Please choose an option</option>
-                  <option value="#800080">Purple</option>
-                  <option value="#ffff00">Yellow</option>
-                  <option value="#008000">Green</option>
-                  <option value="#ffa500">Orange</option>
-                  <option value="#ff0000">Red</option>
-                  <option value="#0000ff">Blue</option>
-                </select>
-              </div>
-              <div>
-                <label for="chooseType">Choose a type:</label>
-                <select id="chooseType" name="choose-type" required>
-                  <option value="choose-option">--Please choose an option--</option>
-                  <option value="background">Background</option>
-                  <option value="text-color">Text Color</option>
-                </select>
-              </div>
-              <button class="button">Submit</button>
-            </form>
-          </section>
+            <div class="input-wrapper">
+              <label for="verb">Verb:</label>
+              <input type="text" id="verb" name="verb" required>
+            </div>
+            <div class="input-wrapper">
+              <label for="adjective">Adjective:</label>
+              <input type="text" id="adjective" name="adjective" required>
+            </div>
+          </div>
+          <button class="button">Submit</button>
+        </form>
+      </section>
     </section>
     <footer>
       <p class="footer-title">Aj Smith * Developer</p>
@@ -78,7 +101,6 @@
       <p> &copy; 2024 Aj Smith. All Rights Reserved.</p>
     </footer>
   </div>
-
-  <script type="module" src="js/custom.js" ></script>
+  <script type="module" src="js/jsfunfunctions.js" ></script>
 </body>
 </html>
