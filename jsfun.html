@@ -35,20 +35,21 @@
           </button>
       </div>
     </header>
+    <div class="page-base" id="pageBase">
     <section class="jsfun-page-hero-section">
       <section class="jspage-cards">
         <div class="jscode-btn-container">
-          <button class="js-btn" id="js-colors-btn">I Want To Change The Colors</button>
-          <button class="js-btn" id="js-time-btn">I Want To See What Time It Is In NYC</button>
-          <button class="js-btn" id="js-madlib-btn">I Want To Make A Madlib</button>
+          <button class="js-btn" id="jsColorsBtn">I Want To Change The Colors</button>
+          <button class="js-btn" id="jsTimeBtn">I Want To See What Time It Is In NYC</button>
+          <button class="js-btn" id="jsMadlibBtn">I Want To Make A Madlib</button>
         </div>
       </section>
-      <section id="colors-fun-wrapper" class="js-hide-form">
-        <form action="" class="color-fun-form" id="color-fun-form">
+      <section id="colorsFunWrapper" class="js-show-form js-hide-form">
+        <form class="color-fun-form" id="colorForm">
           <h3>Fun With Colors</h3>
-          <div>
+          <div class="colors-input-wrapper">
             <label for="chooseColor">Fun With Colors</label>
-            <select id="chooseColor" name="choose-color" required>
+            <select id="chooseColor" name="chooseColor" required>
               <option value="choose-option" disbled selected hidden>Please choose an option</option>
               <option value="#800080">Purple</option>
               <option value="#ffff00">Yellow</option>
@@ -58,46 +59,54 @@
               <option value="#0000ff">Blue</option>
             </select>
           </div>
-          <div>
+          <div class="colors-input-wrapper">
             <label for="chooseType">Choose a type:</label>
-            <select id="chooseType" name="choose-type" required>
+            <select id="chooseType" name="chooseType" required>
               <option value="choose-option">--Please choose an option--</option>
               <option value="background">Background</option>
               <option value="text-color">Text Color</option>
             </select>
           </div>
-          <button class="button">Submit</button>
+          <input type="submit" class="button" value="Submit" id="colorFormSubmit">
         </form>
       </section>
       <section id="nyc-time" class="js-hide-form">
-        <div class="show-nyc-time" id="show-nyc-time"></div>
+        <div class="show-nyc-time" id="nycTime"></div>
       </section>
-      <section id="madlib-wrapper" class="js-hide-form">
-        <form action="" class="madlib-form">
+      <section id="madlibWrapperId" class="js-hide-form">
+        <form action="" class="madlib-form" id="madlibForm">
           <h3>Madlib</h3>
           <div class="madlib-wrapper">
-            <div class="input-wrapper">
+            <div class="madlib-input-wrapper">
               <label for="noun">Noun:</label>
               <input type="text" id="noun" name="noun" required>
             </div>
-            <div class="input-wrapper">
+            <div class="madlib-input-wrapper">
               <label for="verb">Verb:</label>
               <input type="text" id="verb" name="verb" required>
             </div>
-            <div class="input-wrapper">
+            <div class="madlib-input-wrapper">
               <label for="adjective">Adjective:</label>
               <input type="text" id="adjective" name="adjective" required>
             </div>
+            <div class="madlib-input-wrapper">
+              <label for="adverb">Adverb:</label>
+              <input type="text" id="adverb" name="adverb" required>
+            </div>
           </div>
-          <button class="button">Submit</button>
+          <input type="submit" class="button" value="Submit" id="madlibSubmit">
         </form>
       </section>
+      <div>
+        <p class="madlib-sentence" id="madlibSentence"></p>
+      </div>
     </section>
+  </div>
     <footer>
       <p class="footer-title">Aj Smith * Developer</p>
-      <link class="fontawesome"><a href="https://www.linkedin.com/in/aj-smith8120" target="_blank"><i class="fa-brands fa-linkedin"></i></a></link>
-      <link class="fontawesome"><a href="https://github.com/aj1441" target="_blank"><i class="fa-brands fa-github"></i></a></link>
-      <link class="fontawesome"><a href="contact.html"><i class="fa-solid fa-envelope"></i></a></link>
+      <a href="https://www.linkedin.com/in/aj-smith8120" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/aj1441" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:ajtech8120@gmail.com"><i class="fa-solid fa-envelope"></i></a>
       <p> &copy; 2024 Aj Smith. All Rights Reserved.</p>
     </footer>
   </div>

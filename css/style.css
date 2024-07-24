@@ -164,8 +164,6 @@ i:hover {
   padding: 1rem;
   width: 8rem;
   height: 1rem;
-  /* max-width: fit-content; */
-  /* max-height: fit-content; */
   border-radius: 10px;
   font-weight: 700;
   box-shadow: 2px 4px 8px 2px rgb(54 50 164 / 40%)
@@ -272,11 +270,29 @@ font-size: 2rem;
     background-color: var(--purple);
     color: var(--red);
   }
-  #colors-fun-wrapper {
-    border: 3px red dotted;
-    width: 20rem;
+ 
+ .color-fun-form {
+    width: 25rem;
     justify-content: center;
     margin: auto;
+    padding: 2rem;
+    background-color: var(--tan);
+    color: var(--darkpurple);
+  }
+  .colors-input-wrapper {
+    margin: 1rem;
+  }
+  #colorFormSubmit {
+      background-color: var(--red);
+      color: var(--tan);
+      border: none;
+      border-radius: 5px;
+      padding: .25rem;
+  }
+
+  #colorFormSubmit:hover {
+    background-color: var(--purple);
+    color: var(--red);
   }
   
   .js-hide-form {
@@ -284,14 +300,45 @@ font-size: 2rem;
     grid-row: 2/3;
   }
 
+  /* .js-show-form {
+    display: block;
+    grid-row: 2/3;
+  } */
+
  #nyc-time {
 margin: auto;
  }
 
- .madlib-wrapper {
-  display: grid;
-  
+ #madlibWrapperId {
+  border: 3px red dotted;
+  width: 20rem;
+  justify-content: center;
+  margin: auto;
  }
+.madlib-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+}
+.madlib-form h3 {
+  font-size: 2rem;
+}
+.madlib-input-wrapper {
+  padding: .5rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.madlib-input-wrapper label {
+  grid-row: 1/2;
+}
+.madlib-input-wrapper input {
+  grid-row: 2/3;
+}
+.madlib-sentence {
+  color: var(--purple);
+  font-size: 2rem;
+}
+
 
 /* About Page Styling------------------------------------------------- */
 .about-page-hero-section {
@@ -388,15 +435,17 @@ margin: auto;
     display: none;
     top: 3rem;
     width: 30%;
-    height: 180%;
+    height: 120%;
     justify-content: space-around;
     transition: all 400ms;
+    border: 2px solid var(--tan);
   }
   .nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding: 1rem;
   }
   .nav-active {
     right: 0;
@@ -458,7 +507,16 @@ margin: auto;
  }
  .jscode-btn-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  }
+  #jsMadlibBtn {
+    grid-column: 3/4;
   }
 }
-
+@media (min-width: 1100px) {
+  .jscode-btn-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+}
