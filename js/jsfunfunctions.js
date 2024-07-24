@@ -8,7 +8,7 @@ const burgerButton= document.querySelector("button.burger");
 function showHamburger() {
   burger.classList.toggle("fa-times");
   nav.classList.toggle("nav-active"); 
-// document.getElementById("pageBase").style.opacity = "0.5";
+document.getElementById("pageBase").style.opacity = "0.5";
   
 }
 

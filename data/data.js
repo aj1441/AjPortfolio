@@ -16,6 +16,12 @@ const projectData = [
         image: "./img/portfolio-fm.png",
         description: "Using lessons learned from the Cannons Coffee assignment, I built this website according to specifications provided. I then added some JavaScript elements, including a hamburger button.",
         link: "https://aj1441.github.io/farmers-market/",
+    },
+    {
+        title: "Let's Play With Numbers",
+        image: "./img/portfolio-numbers.png",
+        description: "Using JavaScript to perform mather operations on numbers inputed by the user.",
+        link: "https://aj1441.github.io/lets-play-with-numbers/",
     }
 ]
 export default projectData;

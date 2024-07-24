@@ -18,7 +18,8 @@
   --red: #ca0923;
   --tan: #ffead6;
   --purple: #b4a3f7;
-  --darkpurple: #1d0854;
+  /* --darkpurple: #1d0854; */
+  --darkpurple: #210854;
   --blue: #052b76;
   --yellow: #ffde59;
   --green: #0f8b8d;
@@ -423,22 +424,26 @@ margin: auto;
     display: block;
     background-color: var(--red);
     border: none;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    margin-right: .5rem;
     height: 30px;
     width: 30px;
     right: 0;
+    z-index: 1;
   }
+  
   .nav {
     position: absolute;
-    z-index: 1;
+    /* z-index: 2; */
     background: var(--red);
     display: none;
-    top: 3rem;
+    top: 1rem;
     width: 30%;
     height: 120%;
     justify-content: space-around;
     transition: all 400ms;
     border: 2px solid var(--tan);
+    box-shadow: 4px 8px 16px 4px rgba(227, 227, 237, 0.4)
   }
   .nav ul {
     display: flex;
