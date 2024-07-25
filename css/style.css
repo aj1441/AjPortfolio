@@ -89,15 +89,15 @@ i:hover {
 
 
 .hero-section {
-  max-height: 10rem;
+  max-height: 3%;
   display: grid;
-  grid-template-rows: 1fr 3fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr 1fr;
   border-bottom: 5px solid transparent;
   border-image: linear-gradient(45deg, orange, violet);
   border-image-slice: 1;
   background-color: var(--darkpurple);
   justify-content: start;
-  align-items: end;
+  align-items: center;
   justify-items: start;
   padding-left: 5rem;
   align-content: space-between;
@@ -111,44 +111,43 @@ i:hover {
   color: var(--red);
   padding: 0;
   margin: 0;
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 .hero-section h2 {
   padding: 0;
   margin: 0;
   font-size: 2rem;
 }
-.projects-section {
+.projects-grid-container{
   background-color: var(--tan);
-  /* height: 300px; */
 }
 .card-wrapper {
   padding: 1rem;
   margin: 1rem;
   display: grid;
   grid-template-columns: 1fr;
-  /* background-color: var(--orange); */
-  box-shadow: 0 4px 8px 0 rgb(54 50 164 / 20%);
-
+  background-color: var(--tan);
+  box-shadow: 0 4px 8px 0 rgb(54 50 164 / 70%);
   border-radius: 10px;
 }
 .card {
-  padding: 1rem;
-  margin: 1rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  box-shadow: 0 4px 8px 0 rgb(54 50 164 / 20%);
+  /* padding: 1rem; */
+  /* margin: 1rem; */
+  /* display: grid; */
+  /* grid-template-columns: 1fr; */
+  /* box-shadow: 0 4px 8px 0 rgb(54 50 164 / 20%); */
  /* background-color: var(--tan); */
   border-radius: 10px;
 }
 
-.card-title {
-  font-size: 20rem;
+.project-title {
+  font-size: 2rem;
+  margin: .75rem;
 }
 
 .card-description {
-  margin-left: 20px;
-  font-size: 24px;
+  /* margin-left: 20px; */
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -162,7 +161,7 @@ i:hover {
   background-color: var(--purple);
   color: var(--red);
   font-size: 1rem;
-  padding: 1rem;
+  padding: .5rem;
   width: 8rem;
   height: 1rem;
   border-radius: 10px;
@@ -435,10 +434,11 @@ margin: auto;
   .nav {
     position: absolute;
     /* z-index: 2; */
-    background: var(--red);
+    background: var(--tan);
+    opacity: .95;
     display: none;
     top: 1rem;
-    width: 30%;
+    width: 100%;
     height: 120%;
     justify-content: space-around;
     transition: all 400ms;
@@ -463,14 +463,14 @@ margin: auto;
     font-size: 25px;
   }
   .navlink a {
-    color: var(--tan);
+    color: var(--red);
   }
   .navlink a:hover {
     color: var(--purple);
   }
   .resume-btn {
-    background-color: var(--tan);
-    color: var(--red)
+    background-color: var(--red);
+    color: var(--tan);
   }
   
 }
@@ -501,6 +501,7 @@ margin: auto;
  }
  .about-page-hero-section p {
     grid-column: 1/2;
+    font-size: 1.5rem;
  }
  .about-page-hero-section img {
     grid-column: 2/3;
