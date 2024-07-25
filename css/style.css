@@ -36,7 +36,6 @@ body {
 }
 
 header {
-  /* border: 3px solid white; */
   background-color: var(--darkpurple);
   color: var(--red);
 /*   max-width: 100%;
@@ -105,7 +104,6 @@ i:hover {
 }
 .hero-section p {
   margin: 0;
-  /* border: 3px green dotted; */
 }
 .hero-section h1 {
   color: var(--red);
@@ -128,7 +126,7 @@ i:hover {
   grid-template-columns: 1fr;
   background-color: var(--tan);
   box-shadow: 0 4px 8px 0 rgb(54 50 164 / 70%);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .card {
   /* padding: 1rem; */
@@ -153,7 +151,7 @@ i:hover {
 
 .card-image {
  margin: auto;
- border-radius: 10px;
+ border-radius: 5px;
  box-shadow: 2px 4px 8px 2px rgb(54 50 164 / 40%)
 }
 
@@ -164,7 +162,7 @@ i:hover {
   padding: .5rem;
   width: 8rem;
   height: 1rem;
-  border-radius: 10px;
+  border-radius: 5px;
   font-weight: 700;
   box-shadow: 2px 4px 8px 2px rgb(54 50 164 / 40%)
 }
@@ -192,21 +190,9 @@ margin: .5rem;
   color: var(--red);
 }
 
-
-
-/* h1 {
-  border: 2px red solid;
-} */
-
-h3 {
-  border: 2px green solid;
-}
-
 h4 {
   font-size: 2rem;
-  /* border: 2px black solid; */
 }
-
 
 img {
   max-width: 100%;
@@ -242,7 +228,7 @@ font-size: 2rem;
     border-image-slice: 1;
     background-color: var(--darkpurple);
     display: grid;
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
 
 }
 .jspage-cards {
@@ -251,11 +237,11 @@ font-size: 2rem;
 }
 .jscode-btn-container {
     padding: 1rem;
-    margin: 1rem;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   .js-btn {
     padding: 1rem;
@@ -310,7 +296,6 @@ margin: auto;
  }
 
  #madlibWrapperId {
-  border: 3px red dotted;
   width: 20rem;
   justify-content: center;
   margin: auto;
@@ -368,7 +353,7 @@ margin: auto;
 
   .about-page-hero-section img {
     margin: auto;
-    border-radius: 10px;
+    border-radius: 5px;
   }
 /* Contact Page Styling--------------------------------------------------------- */
 .contact-page-hero-section {
@@ -438,11 +423,11 @@ margin: auto;
     opacity: .95;
     display: none;
     top: 1rem;
-    width: 100%;
+    width: 99%;
     height: 120%;
     justify-content: space-around;
     transition: all 400ms;
-    border: 2px solid var(--tan);
+    border: 2px solid var(--red);
     box-shadow: 4px 8px 16px 4px rgba(227, 227, 237, 0.4)
   }
   .nav ul {
