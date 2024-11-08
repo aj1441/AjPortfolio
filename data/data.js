@@ -28,6 +28,12 @@ const projectData = [
         image: "./img/tic-tac-toe.png",
         description: "Using JavaScript to create a Tic-Tac-Toe Game where the player plays against the computer.",
         link: "https://aj1441.github.io/tic-tac-toe-against-cpu/",  
+    },
+    {
+        title: "Horoscopes",
+        image: "./img/horoscope-page.png",
+        description: "Built a responsive web page with HTML, CSS, and JavaScript that enables users to select their sun sign and view a personalized horoscope. Designed for seamless integration with a horoscope REST API. ",
+        link: "https://aj1441.github.io/horoscopes/",  
     }
 ]
 export default projectData;
