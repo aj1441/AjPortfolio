@@ -47,7 +47,6 @@ colorForm.addEventListener("submit", onColorFormSubmit);
 
 function toggleColorForm() {
     document.getElementById("colorsFunWrapper").classList.toggle("js-hide-form");
-    
   }
 
   function onColorFormSubmit(event) {
@@ -87,6 +86,7 @@ madlibForm.addEventListener("submit", onMadlibSubmit);
 
 function toggleMadlib(){
     document.getElementById("madlibWrapperId").classList.toggle("js-hide-form");
+    console.log( document.getElementById("madlibWrapperId").classList);
 }
 
 
@@ -108,3 +108,13 @@ function onMadlibSubmit(event) {
 //  	    para.textContent = response;
 //          return response;
 //   }
+
+// $(".js-btn").on("click", function(e) { 
+//     //get curent description
+//     let $desc = $(this).next(".show-form");
+//     // hide all other description execpt current
+//     $(".show-form").not($desc).hide();
+//     // show or hide current description
+//     $desc.css("display") == "none" ? $desc.show() : $desc.hide();
+    
+//   })

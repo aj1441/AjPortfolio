@@ -22,6 +22,12 @@ const projectData = [
         image: "./img/portfolio-numbers.png",
         description: "Using JavaScript to perform mather operations on numbers inputed by the user.",
         link: "https://aj1441.github.io/lets-play-with-numbers/",
+    },
+    {
+        title: "Tic Tac Toe",
+        image: "./img/tic-tac-toe.png",
+        description: "Using JavaScript to create a Tic-Tac-Toe Game where the player plays against the computer.",
+        link: "https://aj1441.github.io/tic-tac-toe-against-cpu/",  
     }
 ]
 export default projectData;
