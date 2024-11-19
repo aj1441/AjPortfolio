@@ -1,3 +1,20 @@
+// variable declarations-----------------------------------------------------------------------------
+const burger = document.querySelector(".burger i");
+const nav = document.querySelector(".nav");
+const burgerButton= document.querySelector("button.burger");
+
+
+//global functions-----------------------------------------------------------------------------------
+function showHamburger() {
+  burger.classList.toggle("fa-times");
+  nav.classList.toggle("nav-active"); 
+}
+
+// eventListeners-------------------------------------------------------------------------------------
+burgerButton.addEventListener("click", showHamburger);
+
+// function for postmail contact form to have email sent to my email with contact request and noting return email------------------------
+
 let form_id_js = "javascript_form";
 
 let data_js = {

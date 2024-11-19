@@ -1,5 +1,5 @@
 import projectData from "../data/data.js";
-// console.log(projectData);
+console.log(projectData);
 console.log("hello");
 
 // variable declarations-----------------------------------------------------------------------------
