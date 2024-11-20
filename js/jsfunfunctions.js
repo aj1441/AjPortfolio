@@ -16,6 +16,11 @@ document.getElementById("pageBase").style.opacity = "0.5";
 burgerButton.addEventListener("click", showHamburger);
 
 
+// hide all other divs----------------------------------------------------------------------------------
+function hideAllDivs() {
+  const divsToHide = document.querySelectorAll(".toggle-div"); // Add a common class to divs you want to toggle
+  divsToHide.forEach(div => div.classList.add("js-hide-form"));
+}
 
 
 //js nyc time ----------------------------------------------------------------------------------------------
@@ -24,6 +29,7 @@ const displayNycTime = document.getElementById("nycTime");
 nycTime.addEventListener("click", toggleNycTime);
 
 function toggleNycTime(){
+  hideAllDivs();
     document.getElementById("nyc-time").classList.toggle("js-hide-form");
     getNycTime();
 }
@@ -46,6 +52,7 @@ colorFormButton.addEventListener("click", toggleColorForm);
 colorForm.addEventListener("submit", onColorFormSubmit);
 
 function toggleColorForm() {
+  hideAllDivs();
     document.getElementById("colorsFunWrapper").classList.toggle("js-hide-form");
   }
 
@@ -85,6 +92,7 @@ madlibForm.addEventListener("submit", onMadlibSubmit);
 
 
 function toggleMadlib(){
+  hideAllDivs();
     document.getElementById("madlibWrapperId").classList.toggle("js-hide-form");
     console.log( document.getElementById("madlibWrapperId").classList);
 }
