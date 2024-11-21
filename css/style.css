@@ -35,7 +35,7 @@ html, body {
 }
 body {
   font-family: "Cinzel";
-  background-color: var(--yellow);
+  background-color: var(--darkpurple);
   color: var(--purple);
   margin: 0;
   padding: 0;
