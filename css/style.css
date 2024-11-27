@@ -59,10 +59,11 @@ header ul {
   list-style: none;
 }
 .logo {
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-  max-width: 6rem;
-  max-height: 6rem;
-  margin: 1rem;
+  clip-path: polygon(80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%, 20% 0);
+  max-width: 10rem;
+  max-height: 10rem;
+  margin: 1.5rem;
+  
 }
 .nav ul {
   display: flex;
@@ -110,7 +111,7 @@ i:hover {
   max-width: 100%;
   max-height: 3%;
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   border-bottom: 5px solid transparent;
   border-image: linear-gradient(45deg, orange, violet);
   border-image-slice: 1;
@@ -123,6 +124,7 @@ i:hover {
   padding-bottom: 5rem;
   p {
     margin: 0;
+    padding: -1rem 0;
   }
   h1 {
     color: var(--red);
